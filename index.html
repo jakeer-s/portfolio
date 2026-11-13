@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Jakeer | AI & ML Engineer & Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Shaik Jakeer - Graduate in Computer Science (AI & ML), Python Full Stack Developer, and Machine Learning practitioner.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-theme="dark">
+  <!-- Header / Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-accent">&lt;</span>Jakeer<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#demo" class="nav-link">Live Demo</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary hide-mobile">Hire Me</a>
+        <button id="menuToggle" class="icon-btn mobile-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span>Available for Full-time Roles & Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Shaik Jakeer</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            <span id="typewriterText">AI & Machine Learning Enthusiast</span>
+            <span class="cursor">|</span>
+          </h2>
+
+          <p class="hero-desc">
+            B.Tech Computer Science (AI & ML) graduate from KSRM College of Engineering (CGPA: 8.4). 
+            Passionate about building predictive machine learning models, data-driven systems, and scalable full-stack applications with Python and MySQL.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="folder-git-2"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i data-lucide="mail"></i> Get In Touch
+            </a>
+            <button id="downloadResumeBtn" class="btn btn-secondary" title="View & Print Resume">
+              <i data-lucide="file-text"></i> Resume
+            </button>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <i data-lucide="map-pin"></i>
+              <span>Kadapa, Andhra Pradesh, India</span>
+            </div>
+            <a href="mailto:shaikjakeer9441@gmail.com" class="meta-item meta-link">
+              <i data-lucide="mail"></i>
+              <span>shaikjakeer9441@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/shaik-jakeer-468987357" target="_blank" rel="noopener noreferrer" class="meta-item meta-link">
+              <i data-lucide="linkedin"></i>
+              <span>shaik-jakeer-468987357</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card glass-panel">
+            <div class="avatar-container">
+              <div class="avatar-ring">
+                <div class="avatar-initials">SJ</div>
+              </div>
+            </div>
+            <h3 class="profile-name">Shaik Jakeer</h3>
+            <p class="profile-role">Computer Science (AI & ML)</p>
+            <div class="profile-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Full Stack</span>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat-box">
+                <span class="stat-number">8.4</span>
+                <span class="stat-label">B.Tech CGPA</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Core Projects</span>
+              </div>
+            </div>
+
+            <div class="quick-copy-box">
+              <span class="copy-label">Quick Connect:</span>
+              <button class="copy-chip" data-copy="shaikjakeer9441@gmail.com">
+                <i data-lucide="copy"></i> Copy Email
+              </button>
+              <button class="copy-chip" data-copy="+917013729190">
+                <i data-lucide="phone"></i> Copy Phone
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Problem-Solving</h2>
+          <p class="section-subtitle">A blend of analytical mindset, machine learning curiosity, and software craftsmanship.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-panel">
+            <h3>Career Objective</h3>
+            <p>
+              Dedicated and detail-oriented graduate in Artificial Intelligence & Machine Learning with a strong foundation in Python and MySQL. Seeking an entry-level position at a reputable organization where I can gain experience, expand my knowledge, and contribute to innovative solutions while demonstrating quick learning abilities and a positive attitude.
+            </p>
+            <p>
+              With hands-on experience developing disease classification frameworks using ensemble algorithms (AdaBoost, Extra Trees Classifier) and web-based detection systems, I bridge the gap between algorithmic intelligence and practical software solutions.
+            </p>
+
+            <div class="soft-skills-wrapper">
+              <h4>Professional Strengths</h4>
+              <div class="pill-list">
+                <span class="skill-pill"><i data-lucide="users"></i> Teamwork</span>
+                <span class="skill-pill"><i data-lucide="brain"></i> Problem Solving</span>
+                <span class="skill-pill"><i data-lucide="message-square"></i> Communication</span>
+                <span class="skill-pill"><i data-lucide="clock"></i> Time Management</span>
+                <span class="skill-pill"><i data-lucide="zap"></i> Adaptability & Agility</span>
+              </div>
+            </div>
+
+            <div class="languages-wrapper">
+              <h4>Languages Known</h4>
+              <div class="language-cards">
+                <div class="lang-item">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Professional</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name">Telugu</span>
+                  <span class="lang-level">Native</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name">Hindi</span>
+                  <span class="lang-level">Conversational</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card glass-panel">
+              <div class="hl-icon bg-blue">
+                <i data-lucide="cpu"></i>
+              </div>
+              <div class="hl-content">
+                <h4>AI & ML Focus</h4>
+                <p>Ensemble modeling, Scikit-learn, clinical dataset analysis, predictive modeling, AdaBoost & Extra Trees.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-panel">
+              <div class="hl-icon bg-purple">
+                <i data-lucide="layers"></i>
+              </div>
+              <div class="hl-content">
+                <h4>Full Stack Engineering</h4>
+                <p>Python backend development, database integration, Node.js fundamentals, and responsive frontends.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-panel">
+              <div class="hl-icon bg-emerald">
+                <i data-lucide="database"></i>
+              </div>
+              <div class="hl-content">
+                <h4>Relational Databases</h4>
+                <p>Schema design, normalization, complex querying in MySQL, RDBMS architecture, and data integrity.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-panel">
+              <div class="hl-icon bg-amber">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="hl-content">
+                <h4>Continuous Learning</h4>
+                <p>Certified by IBM in Python, Java, and Business Intelligence, and full-stack trained at Saraj Innotech.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">My Tech Stack & Toolkit</h2>
+          <p class="section-subtitle">Technologies and methodologies I work with across AI, data science, and software engineering.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="skill-tabs">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="ml">AI / ML & Data</button>
+          <button class="skill-tab-btn" data-filter="dev">Languages & Web</button>
+          <button class="skill-tab-btn" data-filter="db">Databases & Core</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill Items -->
+          <div class="skill-card glass-panel" data-category="dev ml">
+            <div class="skill-icon-wrap">
+              <i data-lucide="terminal"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Python</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Core language for ML modeling, data structures, automation scripts, and full stack backends.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">Scikit-learn</span>
+                <span class="mini-badge">NumPy</span>
+                <span class="mini-badge">Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="ml">
+            <div class="skill-icon-wrap">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Machine Learning & Ensembles</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">AdaBoost, Extra Trees Classifier, Supervised Learning, Model Evaluation (Precision, Recall, F1-Score).</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">AdaBoost</span>
+                <span class="mini-badge">Extra Trees</span>
+                <span class="mini-badge">Metrics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="db">
+            <div class="skill-icon-wrap">
+              <i data-lucide="database"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>MySQL & Relational Databases</h4>
+                <span class="skill-level">Strong</span>
+              </div>
+              <p class="skill-desc">RDBMS schema design, indexing, SQL queries, relational normalization, data management.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">SQL</span>
+                <span class="mini-badge">Schema Design</span>
+                <span class="mini-badge">Data Integrity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="dev">
+            <div class="skill-icon-wrap">
+              <i data-lucide="code-2"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>C Programming</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Pointers, memory management, foundational data structures, algorithmic problem solving.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">Algorithms</span>
+                <span class="mini-badge">Data Structures</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="dev">
+            <div class="skill-icon-wrap">
+              <i data-lucide="layout"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Frontend (HTML5 & CSS3)</h4>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <p class="skill-desc">Semantic markup, modern styling, responsive layouts, flexbox/grid, and web accessibility.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">HTML5</span>
+                <span class="mini-badge">CSS3</span>
+                <span class="mini-badge">Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="dev">
+            <div class="skill-icon-wrap">
+              <i data-lucide="server"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Node.js Backend Basics</h4>
+                <span class="skill-level">Familiar</span>
+              </div>
+              <p class="skill-desc">Server-side execution, RESTful endpoint principles, package management, async flows.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">REST</span>
+                <span class="mini-badge">Runtime</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="ml db">
+            <div class="skill-icon-wrap">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Business Intelligence & Analytics</h4>
+                <span class="skill-level">Certified</span>
+              </div>
+              <p class="skill-desc">Data reporting, business KPI extraction, analytical insights, certified by IBM.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">IBM Certified</span>
+                <span class="mini-badge">Insights</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="dev">
+            <div class="skill-icon-wrap">
+              <i data-lucide="workflow"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <h4>Full Stack Architecture</h4>
+                <span class="skill-level">Trained</span>
+              </div>
+              <p class="skill-desc">Integrating Python backend logic with modern UI and database layers; learned during Saraj Innotech internship.</p>
+              <div class="tech-badge-row">
+                <span class="mini-badge">Integration</span>
+                <span class="mini-badge">MVC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects & Implementations</h2>
+          <p class="section-subtitle">Real-world applications applying machine learning algorithms and software development.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-panel">
+            <div class="project-header">
+              <div class="project-category">
+                <i data-lucide="activity"></i> Healthcare AI & ML
+              </div>
+              <span class="project-badge">Featured Capstone</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Multiple Disease Detection for Kidney Disease and Heart Disease</h3>
+              <p class="project-description">
+                An integrated clinical machine learning framework engineered to simultaneously detect kidney disease and cardiovascular disease using sophisticated ensemble models on patient records.
+              </p>
+
+              <div class="project-highlights-box">
+                <h4>Key Technical Highlights:</h4>
+                <ul>
+                  <li>Employed <strong>AdaBoost</strong> and <strong>Extra Trees Classifier</strong> algorithms for superior feature separation and resilience to outliers.</li>
+                  <li>Trained on comprehensive clinical parameters (blood pressure, glucose, albumin, serum creatinine, cholesterol).</li>
+                  <li>Rigorous performance assessment measuring Accuracy, Precision, Recall, and F1-score to minimize false negatives.</li>
+                  <li>Architected for potential integration with clinical decision support systems for early preventive diagnosis.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">AdaBoost</span>
+                <span class="tech-tag">Extra Trees</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button class="btn btn-sm btn-outline project-details-btn" data-project="disease">
+                <i data-lucide="info"></i> Architecture & Metrics
+              </button>
+              <a href="#contact" class="btn btn-sm btn-primary">
+                <i data-lucide="message-square"></i> Inquire Project
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel">
+            <div class="project-header">
+              <div class="project-category">
+                <i data-lucide="shield-alert"></i> NLP & Web Classification
+              </div>
+              <span class="project-badge">Interactive System</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Spam Detection System</h3>
+              <p class="project-description">
+                A web-based classification interface demonstrating real-time spam detection algorithms. Features an intuitive user experience with visual confidence meters and styled response indicators.
+              </p>
+
+              <div class="project-highlights-box">
+                <h4>Key Technical Highlights:</h4>
+                <ul>
+                  <li>Clean web interface with styled text input zones and dynamic response rendering.</li>
+                  <li>Python classification logic evaluating text token patterns, spam trigger keywords, and message urgency heuristics.</li>
+                  <li>Visual confidence indicator explaining the classification breakdown (Spam vs. Legitimate/Ham).</li>
+                  <li>Created for educational demonstration and extensible for email or SMS filtering pipelines.</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Classification Logic</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#demo" class="btn btn-sm btn-primary">
+                <i data-lucide="play-circle"></i> Try Live Demo Below
+              </a>
+              <button class="btn btn-sm btn-outline project-details-btn" data-project="spam">
+                <i data-lucide="code"></i> View Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Demo Section -->
+    <section id="demo" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Showcase</span>
+          <h2 class="section-title">Test My Spam Detection Model</h2>
+          <p class="section-subtitle">Experience how the classification logic evaluates incoming messages in real time.</p>
+        </div>
+
+        <div class="demo-wrapper glass-panel">
+          <div class="demo-controls">
+            <label for="demoInput" class="demo-label">Enter a message or test with quick presets:</label>
+            <div class="preset-buttons">
+              <button class="preset-btn" data-text="URGENT! You have won a 1,000,000 cash prize! Call 9876543210 immediately to claim your award now!">
+                <i data-lucide="alert-triangle"></i> Sample Spam #1
+              </button>
+              <button class="preset-btn" data-text="Congratulations! You have been selected for a free lottery coupon. Click this link http://free-reward-gift.xyz to claim!">
+                <i data-lucide="dollar-sign"></i> Sample Spam #2
+              </button>
+              <button class="preset-btn" data-text="Hi Jakeer, could you please review the machine learning project report before tomorrow's college seminar?">
+                <i data-lucide="check-circle-2"></i> Sample Ham #1
+              </button>
+              <button class="preset-btn" data-text="Team meeting is scheduled for 3:00 PM to discuss the database schema updates in MySQL.">
+                <i data-lucide="calendar"></i> Sample Ham #2
+              </button>
+            </div>
+
+            <textarea id="demoInput" class="demo-textarea" rows="4" placeholder="Type or paste any SMS or email text here to test the classifier..."></textarea>
+
+            <div class="demo-action-row">
+              <button id="runClassificationBtn" class="btn btn-primary">
+                <i data-lucide="scan"></i> Classify Message
+              </button>
+              <button id="clearDemoBtn" class="btn btn-secondary">
+                <i data-lucide="rotate-ccw"></i> Reset
+              </button>
+            </div>
+          </div>
+
+          <div class="demo-result-card" id="demoResultCard">
+            <div class="result-placeholder" id="demoPlaceholder">
+              <i data-lucide="sparkles" class="placeholder-icon"></i>
+              <p>Click "Classify Message" or select a preset to analyze classification results.</p>
+            </div>
+
+            <div class="result-content hidden" id="demoResultContent">
+              <div class="result-badge-wrap">
+                <span class="result-badge" id="resultStatusBadge">Ham / Legitimate</span>
+                <span class="result-score" id="resultScore">Confidence: 94%</span>
+              </div>
+
+              <div class="meter-bar-container">
+                <div class="meter-bar-label">
+                  <span>Spam Probability Meter</span>
+                  <span id="meterPercentText">12%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill" id="meterFill" style="width: 12%;"></div>
+                </div>
+              </div>
+
+              <div class="result-analysis">
+                <h5>Heuristic Analysis:</h5>
+                <ul id="analysisPointsList">
+                  <!-- Injected via JS -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Internship Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-subtitle">Practical industry exposure and project-based collaborative learning.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Python Full Stack Intern</h3>
+                  <h4 class="company-name">Saraj Innotech Services Pvt. Ltd</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date-badge"><i data-lucide="calendar"></i> Dec 2025 – Apr 2026</span>
+                  <span class="location-badge"><i data-lucide="map-pin"></i> Hyderabad (Remote)</span>
+                </div>
+              </div>
+
+              <div class="timeline-content">
+                <ul class="timeline-bullets">
+                  <li>Participated in a structured, long-term internship focused on end-to-end <strong>Python Full Stack Development</strong>.</li>
+                  <li>Strengthened foundational and advanced Python principles, modular application structure, and backend API routing.</li>
+                  <li>Implemented relational database integration concepts, connecting applications to structured databases with high consistency.</li>
+                  <li>Enhanced professional problem-solving, collaboration, clean coding conventions, and software engineering discipline through active project sprints.</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Full Stack</span>
+                  <span class="tech-pill">Backend Architecture</span>
+                  <span class="tech-pill">Database Integration</span>
+                  <span class="tech-pill">Team Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic & Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Consistent academic excellence coupled with verified industry certifications.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i data-lucide="graduation-cap"></i> Academic Journey</h3>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-header">
+                <span class="edu-badge active-edu">Graduated</span>
+                <span class="edu-year">2022 – 2026</span>
+              </div>
+              <h4 class="degree-title">B.Tech in Computer Science (AI & ML)</h4>
+              <p class="institution">KSRM College of Engineering, Kadapa</p>
+              <div class="grade-pill high-grade">
+                <i data-lucide="trending-up"></i> CGPA: <strong>8.4 / 10</strong>
+              </div>
+              <p class="edu-desc">
+                Core coursework in Artificial Intelligence, Machine Learning, Data Structures, Relational Database Management Systems, and Python Programming.
+              </p>
+            </div>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-header">
+                <span class="edu-badge">Completed</span>
+                <span class="edu-year">2020 – 2022</span>
+              </div>
+              <h4 class="degree-title">Intermediate (MPC)</h4>
+              <p class="institution">Sri Chaitanya Junior College, Kadapa</p>
+              <div class="grade-pill">
+                <i data-lucide="check-circle-2"></i> Percentage: <strong>82%</strong>
+              </div>
+              <p class="edu-desc">Mathematics, Physics, and Chemistry foundation fostering rigorous quantitative and analytical capabilities.</p>
+            </div>
+
+            <div class="edu-card glass-panel">
+              <div class="edu-header">
+                <span class="edu-badge">Completed</span>
+                <span class="edu-year">2020</span>
+              </div>
+              <h4 class="degree-title">SSC (X Class)</h4>
+              <p class="institution">Sri Sai E.M High School, Kadapa</p>
+              <div class="grade-pill top-grade">
+                <i data-lucide="star"></i> Outstanding: <strong>99%</strong>
+              </div>
+              <p class="edu-desc">Graduated with top academic honors demonstrating strong work ethic and continuous discipline.</p>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i data-lucide="shield-check"></i> Verified Certifications</h3>
+
+            <div class="cert-cards-list">
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box ibm">
+                  <i data-lucide="award"></i>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-top">
+                    <span class="issuer">IBM</span>
+                    <span class="cert-date">Jan 2023</span>
+                  </div>
+                  <h4>Introduction to Python</h4>
+                  <p>Covers Python syntax, data types, loops, functions, and working with libraries.</p>
+                </div>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box ibm">
+                  <i data-lucide="award"></i>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-top">
+                    <span class="issuer">IBM</span>
+                    <span class="cert-date">Aug 2023</span>
+                  </div>
+                  <h4>Java Fundamentals</h4>
+                  <p>Object-Oriented Programming (OOP), encapsulation, inheritance, polymorphism, and Java syntax.</p>
+                </div>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box ibm">
+                  <i data-lucide="award"></i>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-top">
+                    <span class="issuer">IBM</span>
+                    <span class="cert-date">Oct 2024</span>
+                  </div>
+                  <h4>Business Intelligence</h4>
+                  <p>Enterprise data analysis, business metric interpretation, and decision support analytics.</p>
+                </div>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon-box saraj">
+                  <i data-lucide="check-circle"></i>
+                </div>
+                <div class="cert-info">
+                  <div class="cert-top">
+                    <span class="issuer">Saraj Innotech Services</span>
+                    <span class="cert-date">Apr 2026</span>
+                  </div>
+                  <h4>Python Full Stack Development</h4>
+                  <p>End-to-end web architecture, database persistence, and project delivery certificate.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating or discussing opportunities? Send a message or connect directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards-wrap">
+            <div class="contact-card glass-panel">
+              <div class="c-icon"><i data-lucide="mail"></i></div>
+              <div class="c-details">
+                <span class="c-label">Email</span>
+                <a href="mailto:shaikjakeer9441@gmail.com" class="c-value">shaikjakeer9441@gmail.com</a>
+              </div>
+              <button class="icon-btn copy-btn" data-copy="shaikjakeer9441@gmail.com" title="Copy Email">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="c-icon"><i data-lucide="phone"></i></div>
+              <div class="c-details">
+                <span class="c-label">Mobile</span>
+                <a href="tel:+917013729190" class="c-value">+91 7013729190</a>
+              </div>
+              <button class="icon-btn copy-btn" data-copy="+917013729190" title="Copy Mobile">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="c-icon"><i data-lucide="linkedin"></i></div>
+              <div class="c-details">
+                <span class="c-label">LinkedIn Profile</span>
+                <a href="https://linkedin.com/in/shaik-jakeer-468987357" target="_blank" rel="noopener noreferrer" class="c-value">shaik-jakeer-468987357</a>
+              </div>
+              <a href="https://linkedin.com/in/shaik-jakeer-468987357" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open LinkedIn">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="c-icon"><i data-lucide="map-pin"></i></div>
+              <div class="c-details">
+                <span class="c-label">Location</span>
+                <span class="c-value">Kadapa, Andhra Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card glass-panel">
+            <h3>Send a Message</h3>
+            <p class="form-instruction">Fill out the form below to initiate an email directly to Shaik Jakeer.</p>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="nameInput">Your Full Name</label>
+                <input type="text" id="nameInput" required placeholder="e.g. John Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Your Email Address</label>
+                <input type="email" id="emailInput" required placeholder="e.g. john@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput">Subject</label>
+                <input type="text" id="subjectInput" required placeholder="e.g. Job Opportunity / Project Discussion">
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea id="messageInput" rows="4" required placeholder="Write your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i data-lucide="send"></i> Send Message
+              </button>
+            </form>
+
+            <div id="formFeedback" class="form-feedback hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div id="projectModal" class="modal-overlay hidden">
+    <div class="modal-dialog glass-panel">
+      <button id="closeModalBtn" class="icon-btn modal-close" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="modalBody">
+        <!-- Dynamically populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden">
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">&lt;Shaik Jakeer/&gt;</span>
+        <p>B.Tech Computer Science (AI & ML) | Aspiring Software & ML Engineer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; <span id="currentYear"></span> Shaik Jakeer. All rights reserved.</p>
+        <p class="footer-subtext">Kadapa, Andhra Pradesh, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
