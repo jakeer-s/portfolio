@@ -469,13 +469,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     Contact Form Handler
+     Contact Form Handler (Real Email Delivery via FormSubmit & Netlify Forms)
      ========================================================================== */
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitBtnText = document.getElementById('submitBtnText');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('nameInput')?.value.trim();
@@ -492,20 +494,49 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Generate mailto link as seamless client-side dispatch
-      const mailtoUrl = `mailto:shaikjakeer9441@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-
+      // Update button state to sending
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitBtnText) submitBtnText.textContent = 'Sending Message...';
       if (formFeedback) {
-        formFeedback.className = 'form-feedback success';
-        formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your email client is opening to send this message to <code>shaikjakeer9441@gmail.com</code>.`;
+        formFeedback.className = 'form-feedback';
+        formFeedback.textContent = 'Sending your message...';
         formFeedback.classList.remove('hidden');
       }
 
-      // Open email client
-      window.location.href = mailtoUrl;
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/shaikjakeer9441@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            Name: name,
+            Email: email,
+            Subject: subject,
+            Message: message,
+            _subject: `New Portfolio Message: ${subject} (from ${name})`,
+            _template: 'table'
+          })
+        });
 
-      // Reset form
-      contactForm.reset();
+        if (response.ok) {
+          if (formFeedback) {
+            formFeedback.className = 'form-feedback success';
+            formFeedback.innerHTML = `<strong>Message Sent Successfully!</strong> Thank you, ${name}. Your message has been delivered directly to <code>shaikjakeer9441@gmail.com</code>.`;
+            formFeedback.classList.remove('hidden');
+          }
+          contactForm.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (err) {
+        // Fallback: standard form submit to FormSubmit / Netlify
+        contactForm.submit();
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitBtnText) submitBtnText.textContent = 'Send Message';
+      }
     });
   }
 });
